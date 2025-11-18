@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Waste Management System</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+}
+
+header {
+    background-color: #43a047;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #43a047;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px auto 0;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #263238;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Waste Management System</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Report Waste</a>
+            <a href="#">Tips</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Report Your Food Waste</h2>
+            <p>Help us reduce food waste, protect our environment, and support those in need.</p>
+        </section>
+        <section class="form-section">
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="food-type">Type of Food: </label>
+                <input type="text" id="food-type" name="food-type" required>
+                
+                <label for="quantity">Quantity (kg): </label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <label for="location">Location: </label>
+                <input type="text" id="location" name="location" required>
+                
+                <button type="submit">Submit Waste Report</button>
+            </form>
+        </section>
+        <section class="info">
+            <h2>Why Manage Food Waste?</h2>
+            <ul>
+                <li>Reduce landfill and pollution</li>
+                <li>Save money and resources</li>
+                <li>Feed people and animals in need</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Food Waste Management System
+    </footer>
+</body>
+</html>
